@@ -9,9 +9,16 @@ export default function DefaultLayout({children}) {
                 <li>
                     <Link href="/">
                         <a>Home</a>
-                    </Link>
+                    </Link> 
+                </li>
+                <li>
                     <Link href="/home">
                         <a>HomeBis</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/gallery">
+                        <a>gallery</a>
                     </Link>
                 </li>
             </ul>
