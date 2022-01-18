@@ -4,25 +4,24 @@ import Link from "next/link"
 export default function DefaultLayout({children}) {
     return (
         <>
-            <h3 className={styles.nav}>Navbar</h3>
+        <div className={styles.nav}>
             <ul>
                 <li>
-                    <Link href="/">
-                        <a>Home</a>
-                    </Link> 
-                </li>
-                <li>
                     <Link href="/home">
-                        <a>HomeBis</a>
+                        <a>Home</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/gallery">
-                        <a>gallery</a>
+                        <a>Gallery</a>
                     </Link>
                 </li>
             </ul>
+        
+        </div>
+        <div className={styles.children}>
             {children}
+        </div>
             <h3 className={styles.foot}>Footer</h3>
         </>
     )
