@@ -3,9 +3,9 @@ import Image from 'next/image'
 import { useEffect,useState } from 'react'
 
 const loremPicsum = [
-    "https://picsum.photos/1501/400",
-    "https://picsum.photos/1502/400",
-    "https://picsum.photos/1500/400"
+    "https://picsum.photos/1500/130",
+    "https://picsum.photos/1501/130",
+    "https://picsum.photos/1502/130"
 ]
 
 export default function Gallery() {
@@ -15,8 +15,10 @@ useEffect(() => {
     setImages(loremPicsum)
 }, [])
 
-    return (images.map((img) => (
-    <Image src={img} alt={img} width={1500} height={400}/>
-    ))
-    )
-    }
+    return (
+    <LayoutDefault>
+    {images.map((img) => (
+    <Image src={img} alt={img} width={1500} height={130}/>
+    ))}
+    </LayoutDefault>
+    )}
